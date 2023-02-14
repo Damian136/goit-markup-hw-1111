@@ -1,0 +1,27 @@
+.social-network {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 206px;
+  padding-top: 16px;
+  list-style: none;
+
+  &__button-list {
+    display: inline-flex;
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--color-icon);
+  }
+  &__button-list:hover,
+  &__button-list:focus,
+  &__button-list:active {
+    background-color: var(--accent-color);
+    fill: var(--body-background-color);
+    transition: 250ms;
+  }
+}

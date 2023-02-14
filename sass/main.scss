@@ -1,0 +1,20 @@
+@import "./utils/visually-hidden";
+@import "./utils/variables";
+
+@import "./base/common";
+@import "./base/container";
+
+@import "./components/social-network";
+@import "./components/modal-btn";
+@import "./components/button-style";
+@import "./components/product-center";
+
+@import "./layout/header";
+@import "./layout/main-header";
+@import "./layout/tittle-page";
+@import "./layout/short-description";
+@import "./layout/second-section";
+@import "./layout/team";
+@import "./layout/client-list";
+@import "./layout/newslatter";
+@import "./layout/footer-navigation";

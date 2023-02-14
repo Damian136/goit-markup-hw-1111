@@ -1,0 +1,202 @@
+.backdrop {
+  z-index: 1;
+  position: fixed;
+  display: flex;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: opacity 250ms ease-in;
+  visibility: 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  pointer-events: painted;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    &__form-title {
+      margin-top: 40px;
+      font-family: Roboto;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 23px;
+      letter-spacing: 0.03em;
+      text-align: center;
+      color: #212121;
+      padding-bottom: 2px;
+    }
+    &__text-form {
+      margin-left: 40px;
+      margin-top: 5px;
+      display: flex;
+      font-family: Roboto;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14px;
+      letter-spacing: 0.01em;
+      text-align: left;
+      color: var(--contacts-hder-color);
+      padding-bottom: 4px;
+    }
+    &__form-box {
+      width: 448px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      height: 40px;
+      margin-bottom: 10px;
+      padding-left: 42px;
+    }
+    &__form-box:hover,
+    &__form-box:focus-within {
+      border: 1px solid var(--accent-color);
+    }
+    &__form-box:hover + svg,
+    &__form-box:focus-within + svg {
+      fill: #2196f3;
+    }
+    &__icon-person {
+      fill: #212121;
+      height: 12px;
+      width: 12px;
+      position: absolute;
+      top: 102px;
+      left: 60px;
+    }
+    &__icon-phone {
+      fill: #212121;
+      height: 13px;
+      width: 13px;
+      position: absolute;
+      top: 174px;
+      left: 60px;
+    }
+    &__icon-mail {
+      height: 12px;
+      width: 15px;
+      position: absolute;
+      top: 248px;
+      left: 60px;
+    }
+    &__textarea {
+      width: 448px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      height: 120px;
+      resize: none;
+      padding: 12px;
+    }
+    &__textarea::placeholder {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+    }
+    &__checkbox-link {
+      color: var(--accent-color);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.5em;
+      letter-spacing: 0.03em;
+    }
+}
+.close-btn {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  transition: opacity 250ms ease-in;
+  visibility: 250ms linear;
+}
+.insidemodal {
+  width: 11px;
+  height: 11px;
+}
+.legal-checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+.hide-checkbox {
+  opacity: 0;
+}
+.hide-checkbox:checked + .checkboxspan {
+  background-color: rgba(33, 150, 243, 1);
+  border: none;
+}
+.checkboxspan {
+  display: flex;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  margin-left: 54px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #212121;
+}
+.spancheck {
+  margin-left: 7px;
+  margin-right: 54px;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(117, 117, 117, 1);
+}
+.checkbutton {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  background-color: rgba(33, 150, 243, 1);
+  color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  padding: 10px 76px 10px 76px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+}
+.main-buttons {
+  background-color: var(--accent-color);
+  font-family: "Roboto";
+  line-height: 1.87;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  padding: 10px 41px 10px 42px;
+
+  &:hover {
+    cursor: pointer;
+    transition: 250ms;
+  }
+}

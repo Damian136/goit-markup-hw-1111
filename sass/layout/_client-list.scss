@@ -1,0 +1,44 @@
+.client-list {
+  display: block;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.primary-client-list {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  padding-bottom: 94px;
+}
+.primary-client-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  fill: var(--color-icon);
+}
+.primary-client-list :focus,
+.primary-client-list :hover {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+  cursor: pointer;
+  transition: 250ms;
+}
+.clients {
+  height: 92px;
+  width: 170px;
+  border: 1px solid var(--social-links-color);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
